@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		const AS_URL_BASE = "";
+
+		var url = document.location.href;
+		var j = url.substr(url.lastIndexxOf("j=")+2);
+		if (r) {
+			fetch(AS_URL_BASE+'?j'+j)
+			.then(r=>r.text())
+			.then((r)=>{
+				console.log(r);
+				//document.write(r);
+				if (r) {
+					document.location.replace(r);
+				}})
+			.catch(err=>console.log(err))
+			}
+			
+
+	</script>
+</body>
+</html>
